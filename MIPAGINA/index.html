@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilooo.css">
+    <title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<p id="description">Please complete the Form <strong>carefully</strong></p>
+
+	<form id="survey-form">
+		<label id="name-label">Your name<input id="name" type="text" placeholder="E.g.: George Gonzalez" min="5" max="15" required>
+		</label>
+
+		<label id="email-label">Your email<input id="email" type="email" placeholder="E.g.: georgegonzalez@gmail.com" required>
+		</label>
+
+		<label id="number-label">Your age(years)<input id="number" type="number" min="18" max="120" placeholder="Select your age" required>
+		</label> 
+		<select id="dropdown">
+			<option></option>
+			<option></option>
+		</select> 
+		<legend>Do you like the Form?</legend>
+		<label>
+			<input class="inline" value="0" type="radio" name="like" checked>
+		Yes</label>
+		<label>
+			<input class="inline" value="1" type="radio" name="like">
+		No</label>
+		<legend>Select your favorite sports</legend>
+			<label>
+			<input class="inline" name="sport" value="2" type="checkbox"> Football
+			</label>
+			<label>
+			<input class="inline" name="sport" value="3" type="checkbox"> Basketball
+			</label>	
+			<label>
+			<input class="inline" name="sport" value="4" type="checkbox"> Golf
+			</label>
+			<label>	
+			<input class="inline" name="sport" value="5" type="checkbox"> Tennis
+			</label>
+			<label>	
+			<input class="inline" name="sport" value="6" type="checkbox"> Volleyball
+			</label>
+			<label>
+			<input class="inline" name="sport" value="7" type="checkbox"> Handball
+			</label>
+		<label class="write" >Write about you<textarea placeholder="I like playing football..."></textarea></label>
+		<label> <input id="submit" type="submit"></label>
+	</form>
+
+
+</html>
